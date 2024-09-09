@@ -40,27 +40,27 @@ a:hover {
 
 @media only screen and (min-width: 394px) and (max-width: 423px) {
     #center {
-        padding: 0.75rem; /* Ajusta o padding interno */
-        margin: 1rem; /* Ajusta a margem */
-        max-width: calc(100% - 2rem); /* Ajusta a largura máxima para evitar scroll horizontal */
-        box-sizing: border-box; /* Garante que padding e border são incluídos na largura total */
+        padding: 0.75rem;
+        margin: 1rem;
+        max-width: calc(100% - 2rem);
+        box-sizing: border-box;
     }
 }
 
 /* Ajustes para telas menores que 394px */
 @media only screen and (max-width: 393px) {
     #center {
-        padding: 0.5rem; /* Ajusta o padding interno */
-        margin: 0.5rem; /* Ajusta a margem */
-        max-width: calc(100% - 1rem); /* Ajusta a largura máxima para evitar scroll horizontal */
+        padding: 0.5rem;
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
     }
 }
 
 /* Ajustes para telas maiores que 423px */
 @media only screen and (min-width: 424px) {
     #center {
-        padding: 1rem; /* Ajusta o padding interno */
-        margin: 1.5rem; /* Ajusta a margem */
-        max-width: 1024px; /* Define a largura máxima */
+        padding: 1rem;
+        margin: 1.5rem;
+        max-width: 1024px;
     }
 }
