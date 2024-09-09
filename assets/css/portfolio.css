@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
 .portfolio li {
@@ -62,5 +63,36 @@ ul.portfolio {
 
     .portfolio a {
         font-size: 0.875rem;
+    }
+}
+
+@media only screen and (min-width: 424px) and (max-width: 462px) {
+    .portfolio .acordeon {
+        margin: 1rem; /* Ajusta a margem para evitar overflow horizontal */
+        padding: 0.5rem; /* Ajusta o padding interno */
+    }
+
+    .portfolio .acordeon .trigger {
+        font-size: 1.25rem; /* Ajusta o tamanho da fonte do trigger se necessário */
+    }
+
+    .portfolio .acordeon .content {
+        padding: 0.5rem; /* Ajusta o padding interno do conteúdo se necessário */
+    }
+}
+
+/* Ajustes para telas menores que 424px */
+@media only screen and (max-width: 423px) {
+    .portfolio .acordeon {
+        margin: 0.5rem; /* Ajusta a margem para telas menores */
+        padding: 0.25rem; /* Ajusta o padding interno */
+    }
+}
+
+/* Ajustes para telas maiores que 462px */
+@media only screen and (min-width: 463px) {
+    .portfolio .acordeon {
+        margin: 1rem; /* Ajusta a margem para telas maiores */
+        padding: 1rem; /* Ajusta o padding interno */
     }
 }
