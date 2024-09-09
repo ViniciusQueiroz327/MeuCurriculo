@@ -48,7 +48,7 @@
     height: 1rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('assets/imgs/icons/link.svg');
+    background-image: url('../imgs/icons/link.svg');
     margin-right: .5rem;
 }
 
