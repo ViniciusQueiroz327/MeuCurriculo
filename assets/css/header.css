@@ -1,0 +1,121 @@
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#header::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: .1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../imgs/icons/dots.svg');
+}
+
+#header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#header h1 {
+    text-align: center;
+    font-family: 'Neue Machina';
+}
+
+#header .icons {
+    width: 20px;
+    height: 20px;
+}
+
+#infos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#infos p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.125rem;
+}
+
+#infos p, img {
+    margin: .5rem;
+}
+
+#infos p::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+#infos p::after {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: .5rem;
+}
+
+#infos #job::before {
+    background-image: url('../imgs/icons/user.svg');
+}
+
+#infos #job::after {
+    background-image: url('../imgs/icons/link.svg');
+}
+
+#infos #location::before {
+    background-image: url('../imgs/icons/location.svg');
+}
+
+#infos #phone::before {
+    background-image: url('../imgs/icons/whatsapp.svg');
+}
+
+#infos #phone::after {
+    background-image: url('../imgs/icons/link.svg');
+}
+
+#infos #email::before {
+    background-image: url('../imgs/icons/email.svg');
+}
+
+#infos #email::after {
+    background-image: url('../imgs/icons/link.svg');
+}
+
+@media only screen and (max-width: 393px) {
+    #header img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #header h1 {
+        font-size: 1.25rem;
+    }
+
+    #header .icons {
+        width: 15px;
+        height: 15px;
+    }
+
+    #infos p {
+        font-size: 1rem;
+    }
+}
